@@ -15,7 +15,7 @@ use odbc_api::{ColumnDescription, Cursor, DataType, InputParameter, IntoParamete
 use std::{convert::TryInto, ffi::CString, iter, thread};
 
 const MSSQL_CONNECTION: &str =
-    "Driver={ODBC Driver 17 for SQL Server};Server=localhost;UID=SA;PWD=<YourStrong@Passw0rd>;";
+    "Driver={SQL Server};Server=localhost;UID=SA;PWD=<YourStrong@Passw0rd>;";
 
 const MSSQL: &Profile = &Profile {
     connection_string: MSSQL_CONNECTION,
